@@ -30,3 +30,14 @@ body {
 .gap{
   @apply gap-[40px] sm:gap-[50px] md:gap-[60px] lg:gap-[70px] xl:gap-[81px];
 }
+
+
+.footer__all{
+   @apply py-[30px] md:py-[35px] lg:py-[40px] xl:py-[45px] 2xl:py-[50px] ;
+}
+.footer__top{
+   @apply pt-[20px] md:pt-[25px] lg:pt-[30px];
+}
+.footer__bottom{
+   @apply pb-[20px] md:pb-[25px] lg:pb-[30px];
+}

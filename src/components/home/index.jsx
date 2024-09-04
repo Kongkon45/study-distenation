@@ -5,6 +5,8 @@ import Careers from './Careers/Careers';
 import Cost from './Cost/Cost';
 import Banner from './Banner/Banner';
 import PopularUniversity from './PopularUniversity/PopularUniversity';
+import Usa from './Usa/Usa';
+import OurBlog from './OurBlog/OurBlog';
 
 const AllHomePageSection = () => {
     return (
@@ -38,6 +40,16 @@ const AllHomePageSection = () => {
             {/* Cost section  */}
             <section>
                 <Cost/>
+            </section>
+
+            {/* Usa section  */}
+            <section>
+                <Usa/>
+            </section>
+
+            {/* OurBlog section  */}
+            <section>
+                <OurBlog/>
             </section>
         </div>
     );
