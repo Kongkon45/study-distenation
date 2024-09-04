@@ -2,4 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* primary color  */
+.primary {
+  color: #f6941e;
+}
 
+/* secondary color  */
+.secondary {
+  color: #1e1e1e;
+}
+
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
