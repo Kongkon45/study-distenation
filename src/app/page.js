@@ -1,9 +1,10 @@
+import AllHomePageSection from '@/components/home';
 import React from 'react';
 
 const HomePage = () => {
   return (
     <div>
-      home page
+      <AllHomePageSection/>
     </div>
   );
 };
