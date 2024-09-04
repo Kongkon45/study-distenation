@@ -9,6 +9,7 @@ import Usa from './Usa/Usa';
 import OurBlog from './OurBlog/OurBlog';
 import StudentSpeak from './StudentSpeak/StudentSpeak';
 import Review from './Review/Review';
+import Faq from './Faq/Faq';
 
 const AllHomePageSection = () => {
     return (
@@ -57,6 +58,11 @@ const AllHomePageSection = () => {
             {/* StudentSpeak section  */}
             <section>
                 <StudentSpeak/>
+            </section>
+
+            {/* Faq section  */}
+            <section>
+                <Faq/>
             </section>
 
             {/* OurBlog section  */}
