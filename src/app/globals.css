@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* primary color  */
-.primary {
-  color: #f6941e;
+body {
+  @apply bg-[#F5F5F5] overflow-x-hidden;
 }
 
-/* secondary color  */
-.secondary {
-  color: #1e1e1e;
-}
 
 .container {
-  padding-left: 150px;
-  padding-right: 150px;
+  @apply px-5 md:px-[80px] lg:px-[100px] xl:px-[120px] 2xl:px-[150px]  mx-auto;
+}
+
+.padding__top{
+  @apply pt-[70px] md:pt-[90px] lg:pt-[110px] xl:pt-[130px] 2xl:pt-[150px];
+}
+
+.font_size{
+  @apply text-3xl md:text-4xl lg:text-[42px] xl:text-5xl;
+}
+
+.gap{
+  @apply gap-[40px] sm:gap-[50px] md:gap-[60px] lg:gap-[70px] xl:gap-[81px];
 }
