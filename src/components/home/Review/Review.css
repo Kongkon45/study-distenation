@@ -1,0 +1,8 @@
+.review__cart{
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.review__cart:hover{
+    border-bottom: 2px solid #F6941E;
+    cursor: pointer;
+}
