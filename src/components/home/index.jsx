@@ -7,6 +7,7 @@ import Banner from './Banner/Banner';
 import PopularUniversity from './PopularUniversity/PopularUniversity';
 import Usa from './Usa/Usa';
 import OurBlog from './OurBlog/OurBlog';
+import StudentSpeak from './StudentSpeak/StudentSpeak';
 
 const AllHomePageSection = () => {
     return (
@@ -45,6 +46,11 @@ const AllHomePageSection = () => {
             {/* Usa section  */}
             <section>
                 <Usa/>
+            </section>
+
+            {/* StudentSpeak section  */}
+            <section>
+                <StudentSpeak/>
             </section>
 
             {/* OurBlog section  */}
