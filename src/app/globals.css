@@ -15,6 +15,14 @@ body {
   @apply pt-[70px] md:pt-[90px] lg:pt-[110px] xl:pt-[130px] 2xl:pt-[150px];
 }
 
+.padding__bottom{
+  @apply pb-[70px] md:pb-[90px] lg:pb-[110px] xl:pb-[130px] 2xl:pb-[150px];
+}
+
+.padding__all{
+  @apply py-[70px] md:py-[90px] lg:py-[110px] xl:py-[130px] 2xl:py-[150px];
+}
+
 .font_size{
   @apply text-3xl md:text-4xl lg:text-[42px] xl:text-5xl;
 }
