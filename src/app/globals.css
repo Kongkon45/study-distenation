@@ -45,3 +45,35 @@ body {
 .padding__bottom__student{
   @apply pb-[120px] md:pb-[90px] lg:pb-[110px] xl:pb-[130px] 2xl:pb-[150px];
 }
+
+.nav__bg{
+  background: #F5F5F5;
+}
+
+
+
+/* Big screen size Media Query */
+@media screen and (min-width: 1040px) {
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .custom-container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}

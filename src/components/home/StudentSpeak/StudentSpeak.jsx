@@ -69,7 +69,7 @@ const studentsData = [
 const StudentSpeak = () => {
   return (
     <div className="padding__top ">
-      <div className="studentSpeak__bg ">
+      <div className="studentSpeak__bg container">
         
         <div className="h-full flex flex-col justify-center items-center">
           <h3 className="text-primary font_size font-bold text-center md:text-left">

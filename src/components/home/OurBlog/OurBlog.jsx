@@ -76,9 +76,13 @@ const OurBlog = () => {
                       width={24}
                       height={24}
                     />
-                    <p className="text-sm xl:text-base font-normal text-secondary">{data?.date}</p>
+                    <p className="text-sm xl:text-base font-normal text-secondary">
+                      {data?.date}
+                    </p>
                   </div>
-                  <h6 className="text-xl md:text-2xl text-secondary font-bold pt-[10px] md:pt-[14px] pb-[30px] md:pb-[35px] lg:pb-[40px]">{data?.title}</h6>
+                  <h6 className="text-xl md:text-2xl text-secondary font-bold pt-[10px] md:pt-[14px] pb-[30px] md:pb-[35px] lg:pb-[40px]">
+                    {data?.title}
+                  </h6>
                   <div className="flex justify-between items-center">
                     <div className="flex items-center gap-[5px]">
                       <Image
@@ -87,7 +91,9 @@ const OurBlog = () => {
                         width={24}
                         height={24}
                       />
-                      <p className="text-sm xl:text-base font-normal text-secondary">{data?.date}</p>
+                      <p className="text-sm xl:text-base font-normal text-secondary">
+                        {data?.date}
+                      </p>
                     </div>
                     <div className="flex items-center gap-[5px]">
                       <Image
@@ -96,7 +102,9 @@ const OurBlog = () => {
                         width={24}
                         height={24}
                       />
-                      <p className="text-sm xl:text-base font-normal text-secondary">{data?.commentCount}</p>
+                      <p className="text-sm xl:text-base font-normal text-secondary">
+                        {data?.commentCount}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -106,18 +114,18 @@ const OurBlog = () => {
         </div>
         {/* button  */}
         <div className="flex justify-center items-center pt-[15px] md:pt-[20px] lg:pt-[25px] xl:pt-[30px]">
-                <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-primary py-[10px] px-[20px] border border-primary bg-white">
-                Browse More Blog
-                  <span>
-                    <Image
-                      src="/assets/icons/orange_arrow.png"
-                      alt="arrow icon"
-                      width={24}
-                      height={24}
-                    />
-                  </span>
-                </button>
-              </div>
+          <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-primary py-[10px] px-[20px] border border-primary bg-white">
+            Browse More Blog
+            <span>
+              <Image
+                src="/assets/icons/orange_arrow.png"
+                alt="arrow icon"
+                width={24}
+                height={24}
+              />
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   );

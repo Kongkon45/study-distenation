@@ -4,8 +4,8 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="bg-secondary">
-      <div className="container footer__all">
+    <div className="">
+      <div className="bg-secondary container footer__all">
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-10 gap-[20px] md:gap-[100px]">
           <div className="md:col-span-2 lg:col-span-3">
             <Image

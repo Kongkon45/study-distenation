@@ -13,7 +13,7 @@ import Faq from './Faq/Faq';
 
 const AllHomePageSection = () => {
     return (
-        <div>
+        <div className='custom-container'>
             
             {/* Banner section  */}
             <section>
@@ -70,7 +70,7 @@ const AllHomePageSection = () => {
             </section>
 
             {/* OurBlog section  */}
-            <section>
+            <section className='padding__bottom'>
                 <OurBlog/>
             </section>
         </div>
