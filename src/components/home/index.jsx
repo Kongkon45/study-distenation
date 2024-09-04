@@ -56,12 +56,16 @@ const AllHomePageSection = () => {
             </section>
 
             {/* StudentSpeak section  */}
-            <section>
+            <section className='padding__bottom'>
                 <StudentSpeak/>
             </section>
 
+            <section className='padding__bottom__student md:p-0'>
+
+            </section>
+
             {/* Faq section  */}
-            <section>
+            <section className='padding__top'>
                 <Faq/>
             </section>
 

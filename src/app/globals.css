@@ -41,3 +41,7 @@ body {
 .footer__bottom{
    @apply pb-[20px] md:pb-[25px] lg:pb-[30px];
 }
+
+.padding__bottom__student{
+  @apply pb-[120px] md:pb-[90px] lg:pb-[110px] xl:pb-[130px] 2xl:pb-[150px];
+}
