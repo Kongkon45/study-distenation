@@ -40,8 +40,8 @@ const OurBlogData = [
 
 const OurBlog = () => {
   return (
-    <div className="blog__bg">
-      <div className="container py-[30px] md:py-[35px] lg:py-[40px] xl:py-[45px] 2xl:py-[50px]">
+    <div className="">
+      <div className="blog__bg container py-[30px] md:py-[35px] lg:py-[40px] xl:py-[45px] 2xl:py-[50px]">
         {/* title  */}
         <div className="flex flex-col items-center">
           <h3 className="text-secondary font_size font-bold text-center md:text-left">

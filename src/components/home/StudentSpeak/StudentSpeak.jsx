@@ -82,7 +82,7 @@ const StudentSpeak = () => {
             incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div className="container -mt-[100px]">
+        <div className="-mt-[100px]">
            {/* ==================== swiper slider ================ */}
         <Swiper
           modules={[Autoplay]}

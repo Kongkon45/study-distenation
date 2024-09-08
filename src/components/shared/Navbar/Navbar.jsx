@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-50">
-      <div className="nav__bg p-4">
+      <div className="nav__bg py-4">
         <nav className="container">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Left side: Logo */}
