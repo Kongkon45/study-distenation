@@ -86,7 +86,7 @@ const Usa = () => {
                                     <h6 className='text-base md:text-lg font-bold text-white text-center px-[10px] h-[50px] bg-primary flex justify-center items-center'>
                                         {data?.title}
                                     </h6>
-                                    <div className='px-[10px] bg-white h-[150px] md:h-[120px] flex flex-col items-center justify-center'>
+                                    <div className='px-[10px] bg-white h-[180px] md:h-[120px] flex flex-col items-center justify-center'>
                                     <p className='text-base font-normal text-secondary text-center'>
                                         {data?.desc}
                                     </p>

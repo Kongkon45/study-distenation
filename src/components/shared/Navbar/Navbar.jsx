@@ -3,9 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hoverStudy, setHoverStudy] = useState(true);
+  const [hoverGallery, setHoverGallery] = useState(true);
 
   return (
     <div className="sticky top-0 z-50">
@@ -14,16 +18,18 @@ const Navbar = () => {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Left side: Logo */}
             <div className="text-white text-2xl font-bold">
-              <Image
-                src="/assets/images/nav_logo.png"
-                alt="nav logo"
-                width={143}
-                height={41}
-              />
+              <Link href="/">
+                <Image
+                  src="/assets/images/nav_logo.png"
+                  alt="nav logo"
+                  width={143}
+                  height={41}
+                />
+              </Link>
             </div>
 
             {/* Center: Menu Items (hidden on small screens) */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden xl:flex space-x-8">
               <Link
                 href="#"
                 className="text-base 2xl:text-lg font-bold text-secondary hover:text-primary"
@@ -39,46 +45,18 @@ const Navbar = () => {
               <Link
                 href="#"
                 className="text-base 2xl:text-lg font-bold flex items-center text-secondary hover:text-primary"
+                onMouseEnter={() => setHoverStudy(false)}
+                onMouseLeave={() => setHoverStudy(true)}
               >
-                Study Distention{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M7.5 10L12.5 15L17.5 10"
-                    stroke="#1E1E1E"
-                    stroke-opacity="0.8"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                Study Distention {hoverStudy ? <IoIosArrowDown /> : <IoIosArrowUp />}
               </Link>
               <Link
                 href="#"
                 className="text-base 2xl:text-lg font-bold flex items-center text-secondary hover:text-primary"
+                onMouseEnter={()=>setHoverGallery(false)}
+                onMouseLeave={()=>setHoverGallery(true)}
               >
-                Gallery{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M7.5 10L12.5 15L17.5 10"
-                    stroke="#1E1E1E"
-                    stroke-opacity="0.8"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                Gallery { hoverGallery ? <IoIosArrowDown /> : <IoIosArrowUp /> } 
               </Link>
               <Link
                 href="#"
@@ -97,22 +75,23 @@ const Navbar = () => {
             {/* Right side: Button */}
             <div className="hidden md:block">
               <div className="flex justify-center items-center">
-                <button className="flex items-center gap-[8px] text-base md:text-lg font-bold text-primary py-[10px] px-[16px] border border-primary bg-white">
+                <button className="flex items-center gap-[8px] text-base md:text-lg font-bold text-primary py-[10px] px-[16px] border border-primary bg-white hover:bg-primary hover:text-secondary rounded-[6px]">
                   Enquire Now
                   <span>
-                    <Image
+                    {/* <Image
                       src="/assets/icons/orange_arrow.png"
                       alt="arrow icon"
                       width={24}
                       height={24}
-                    />
+                    /> */}
+                    <FaArrowRightLong />
                   </span>
                 </button>
               </div>
             </div>
 
             {/* Small Device Menu Icon */}
-            <div className="md:hidden flex items-center">
+            <div className="xl:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-white focus:outline-none"
@@ -128,7 +107,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="md:hidden mt-4 space-y-6">
+            <div className="xl:hidden mt-4 space-y-6">
               <Link
                 href="#"
                 className="block text-base 2xl:text-lg font-bold text-secondary hover:text-primary py-2"
@@ -144,46 +123,20 @@ const Navbar = () => {
               <Link
                 href="#"
                 className="block text-base 2xl:text-lg font-bold flex items-center text-secondary hover:text-primary py-2"
+                onMouseEnter={()=> setHoverStudy(false)}
+                onMouseLeave={()=> setHoverStudy(true)}
               >
-                Study Distention{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M7.5 10L12.5 15L17.5 10"
-                    stroke="#1E1E1E"
-                    stroke-opacity="0.8"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                Study Distention {hoverStudy ? <IoIosArrowDown/> : <IoIosArrowUp/>}
+                
               </Link>
               <Link
                 href="#"
                 className="block text-base 2xl:text-lg font-bold flex items-center text-secondary hover:text-primary py-2"
+                onMouseEnter={()=> setHoverGallery(false)}
+                onMouseLeave={()=> setHoverGallery(true)}
               >
-                Gallery{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M7.5 10L12.5 15L17.5 10"
-                    stroke="#1E1E1E"
-                    stroke-opacity="0.8"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                Gallery {hoverGallery ? <IoIosArrowDown/> : <IoIosArrowUp/>}
+                
               </Link>
               <Link
                 href="#"

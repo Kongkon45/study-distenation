@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import "./PopularUniversity.css";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const popularUniversityData = [
     {
@@ -69,16 +70,17 @@ const PopularUniversity = () => {
                     }
                 </div>
                 {/* button  */}
-                <div className="flex justify-center items-center">
-                <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-white py-[10px] px-[20px] border border-white">
+                <div className="group flex justify-center items-center">
+                <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-white py-[10px] px-[20px] border border-white group-hover:bg-primary rounded-[6px] group-hover:border-none">
                   Read More{" "}
                   <span>
-                    <Image
+                    {/* <Image
                       src="/assets/icons/white_arrow.png"
                       alt="arrow icon"
                       width={24}
                       height={24}
-                    />
+                    /> */}
+                    <FaArrowRightLong/>
                   </span>
                 </button>
               </div>

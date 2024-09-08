@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const WhyStudy = () => {
   return (
@@ -91,16 +92,18 @@ const WhyStudy = () => {
                   Merit Based & Need Based Scholarships
                 </li>
               </ul>
-              <div className="flex justify-center md:justify-start items-center pt-[15px] md:pt-[20px]  2xl:pt-[30px]">
-                <button className="flex items-center gap-[10px] text-base md:text-lg font-bold bg-primary text-white py-[10px] px-[20px]">
+              <div className="group flex justify-center md:justify-start items-center pt-[15px] md:pt-[20px]  2xl:pt-[30px]">
+                <button className="flex items-center gap-[10px] text-base md:text-lg font-bold bg-primary text-white group-hover:text-secondary group-hover:bg-white group-hover:border group-hover:border-primary py-[10px] px-[20px] rounded-[6px]">
                 See More
                   <span>
-                    <Image
+                    {/* <Image
                       src="/assets/icons/white_arrow.png"
                       alt="arrow icon"
                       width={24}
                       height={24}
-                    />
+                      className="w-[24px] h-[24px] group-hover:text-secondary"
+                    /> */}
+                    <FaArrowRightLong className="group-hover:text-secondary"/>
                   </span>
                 </button>
               </div>

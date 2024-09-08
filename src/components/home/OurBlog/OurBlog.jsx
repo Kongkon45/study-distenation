@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import "./OurBlog.css";
+import { FaArrowRightLong } from "react-icons/fa6";
 const OurBlogData = [
   {
     id: 1,
@@ -68,7 +69,7 @@ const OurBlog = () => {
                   />
                 </div>
                 {/* contents  */}
-                <div className="bg-white py-[30px] px-[15px]">
+                <div className="bg-white py-[20px] px-[15px]">
                   <div className="flex items-center gap-[5px]">
                     <Image
                       src={data?.calendar}
@@ -80,7 +81,7 @@ const OurBlog = () => {
                       {data?.date}
                     </p>
                   </div>
-                  <h6 className="text-xl md:text-2xl text-secondary font-bold pt-[10px] md:pt-[14px] pb-[30px] md:pb-[35px] lg:pb-[40px]">
+                  <h6 className="text-xl text-secondary font-bold pt-[10px] md:pt-[14px] pb-[20px]">
                     {data?.title}
                   </h6>
                   <div className="flex justify-between items-center">
@@ -113,16 +114,18 @@ const OurBlog = () => {
           })}
         </div>
         {/* button  */}
-        <div className="flex justify-center items-center pt-[15px] md:pt-[20px] lg:pt-[25px] xl:pt-[30px]">
-          <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-primary py-[10px] px-[20px] border border-primary bg-white">
+        <div className="group flex justify-center items-center pt-[15px] md:pt-[20px] lg:pt-[25px] xl:pt-[30px]">
+          <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-primary py-[10px] px-[20px] border border-primary bg-white group-hover:bg-primary group-hover:text-white rounded-[6px]">
             Browse More Blog
             <span>
-              <Image
+              {/* <Image
                 src="/assets/icons/orange_arrow.png"
                 alt="arrow icon"
                 width={24}
                 height={24}
-              />
+                className="hover:text-white"
+              /> */}
+              <FaArrowRightLong className="group-hover:text-white"/>
             </span>
           </button>
         </div>

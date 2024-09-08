@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Careers = () => {
   return (
@@ -26,16 +27,17 @@ const Careers = () => {
                 status, jobs and earnings, education & skills and environmental
                 quality.
               </p>
-              <div className="flex justify-center md:justify-start items-center pt-[15px] md:pt-[20px] lg:pt-[25px] xl:pt-[30px]">
-                <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-secondary py-[10px] px-[20px] border border-primary bg-white">
+              <div className="group flex justify-center md:justify-start items-center pt-[15px] md:pt-[20px] lg:pt-[25px] xl:pt-[30px]">
+                <button className="flex items-center gap-[10px] text-base md:text-lg font-bold text-secondary group-hover:text-white py-[10px] px-[20px] border border-primary bg-white group-hover:bg-primary rounded-[6px]">
                   Read More{" "}
                   <span>
-                    <Image
+                    {/* <Image
                       src="/assets/icons/black_arrow.png"
                       alt="arrow icon"
                       width={24}
                       height={24}
-                    />
+                    /> */}
+                    <FaArrowRightLong className="group-hover:text-white"/>
                   </span>
                 </button>
               </div>

@@ -72,7 +72,7 @@ const OurApplication = () => {
                                             className='border-dashed  border-2 border-secondary rounded-full p-[12px] w-full h-full transition-all duration-300 ease-in-out group-hover:border-none group-hover:cursor-pointer group-hover:bg-primary group-hover:text-white'
                                         />
                                     </div>
-                                    <h6 className='text-lg font-bold text-center  mt-[30px] md:mt-[40px] border border-secondary p-[10px] transition-all duration-300 ease-in-out group-hover:border-primary  '>
+                                    <h6 className=' w-full h-[110px]  text-lg font-bold text-center  mt-[30px] md:mt-[40px] border border-secondary p-[10px] transition-all duration-300 ease-in-out group-hover:border-primary  '>
                                         {data?.title}
                                     </h6>
                                 </div>

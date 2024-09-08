@@ -103,7 +103,7 @@ const StudentSpeak = () => {
               <div className="w-full !h-full ">
                 <div className="p-[20px] md:p-[24px] bg-white">
                   <Image src={slideInfo?.img} alt={slideInfo?.name} width={400} height={200} className="w-[400px] h-[200px]"/>
-                  <h4 className="text-3xl md:text-4xl font-bold text-secondary pt-[20px] md:pt-[24px]">
+                  <h4 className="text-2xl font-bold text-secondary pt-[20px] md:pt-[24px]">
                     {slideInfo?.name}
                   </h4>
                   <p className="text-base text-secondary font-normal pt-[8px]">

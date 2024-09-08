@@ -50,7 +50,7 @@ const Review = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[24px] pt-[30px] md:pt-[35px] lg:pt-[40px] xl:pt-[45px] 2xl:pt-[50px]">
             {
                 reviewData?.map((data)=>{
-                    return <div key={data?.id} className="review__cart py-[30px] px-[20px]">
+                    return <div key={data?.id} className="review__cart py-[30px] px-[20px] rounded-[6px]">
                         <Image src={data?.quote} alt="quote icon" width={32} height={32}/>
                         <p className="text-base font-normal py-[10px] text-secondary">{data?.para}</p>
                         <Image src={data?.star} alt="five star icon" width={104} height={16}/>
